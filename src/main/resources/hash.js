@@ -1,3 +1,3 @@
-MyHash = function() {
-    var a = "a";
+MyHash = function(data) {
+    return data;
 }
