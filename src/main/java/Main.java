@@ -1,6 +1,7 @@
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
+import java.util.Date;
 
 public class Main {
 
@@ -16,6 +17,10 @@ public class Main {
             Invocable invocable = (Invocable) engine;
 
             Object result = invocable.invokeFunction("MyHash", "Sheldon Cooper");
+            System.out.println(result);
+            System.out.println(result.getClass());
+
+            result = invocable.invokeFunction("MyHash", new Date());
             System.out.println(result);
             System.out.println(result.getClass());
 
