@@ -12,7 +12,7 @@ public class Main {
             ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
 
             engine.eval("load('classpath:require.js');");
-            engine.eval("load('classpath:nashlib.js');");
+            engine.eval("load('classpath:thenashlib.js');");
             engine.eval("print('Hello World');");
 
             engine.eval("eval(myNash = new Nash())");
