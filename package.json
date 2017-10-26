@@ -4,8 +4,8 @@
   "description": "testing lib usage in nashorn",
   "main": "build/lib/main",
   "scripts": {
-    "build": "nodejs ./build.js ; uglifyjs -o ./build/lib/main.min.js ./build/lib/main.js; uglifyjs -o ./build/lib/nahslib.min.js ./build/lib/nashlib.js",
-    "install": "nodejs ./build.js ; uglifyjs -o ./build/lib/main.min.js ./build/lib/main.js; uglifyjs -o ./build/lib/nashlib.min.js ./build/lib/nashlib.js"
+    "build": "nodejs ./build.js ; uglifyjs -o ./build/lib/main.min.js ./build/lib/main.js; uglifyjs -o ./build/lib/thenahslib.min.js ./build/lib/thenashlib.js",
+    "install": "nodejs ./build.js ; uglifyjs -o ./build/lib/main.min.js ./build/lib/main.js; uglifyjs -o ./build/lib/thenashlib.min.js ./build/lib/thenashlib.js"
   },
   "keywords": [
     "nashorne"

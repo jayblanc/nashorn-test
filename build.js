@@ -47,5 +47,5 @@ var forBrowser = function( srcFile, dstPath, dstFile, moduleName, externalModule
 }
 
 babelAndCopy('lib/*.js', 'build/lib');
-forBrowser('lib/main.js', 'build/lib/', 'nashlib.js');
+forBrowser('lib/main.js', 'build/lib/', 'thenashlib.js');
 
