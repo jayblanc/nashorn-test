@@ -1,9 +1,5 @@
-import jdk.nashorn.api.scripting.JSObject;
-
-import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
-import java.util.Date;
 
 public class Main {
 
@@ -11,13 +7,14 @@ public class Main {
         try {
             ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
 
-            engine.eval("load('classpath:require.js');");
-            engine.eval("load('classpath:nashlib.js');");
+            engine.eval("load('classpath:js/timeout.js');");
+            engine.eval("load('classpath:js/require.js');");
+            engine.eval("load('classpath:js/main.js');");
+
             engine.eval("print('Hello World');");
 
-            engine.eval("eval(myNash = new Nash())");
-
-            engine.eval("print(myNash.display('Hello boy'));");
+            engine.eval("var cc = new Hash('sha512');");
+            engine.eval("cc.hash('this is my text').then( (h) => { print(h) });");
 
 //            Invocable invocable = (Invocable) engine;
 //
